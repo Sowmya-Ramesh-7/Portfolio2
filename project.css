@@ -159,6 +159,7 @@ img{
 @media(max-width:750px){
     img{
         width:400px;
+        height:219px;
        margin: 10px;
        margin-top: 50px;
     }
