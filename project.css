@@ -5,92 +5,15 @@
 }
 
 
-/*menu*/
 
-#check{
-    display: none;
-}
-
-.btn_one{
-    color: white;
-    font-size: 25px;
-    font-weight :700px;
-    position:absolute;
-    left:16px;
-    line-height: 60px;
-    cursor: pointer;
-}
-
-.sidebar_menu{
-    position:fixed;
-    left:-300px;
-    height:100vh;
-    width: 300px;
-    transition: all 0.3s linear;
-    background-color: rgba(87, 7, 116, 0.977);
-    box-shadow: 0 0 6px rgba(2, 0, 0, 0.5);
-}
-
-.sidebar_menu .btn_two i{
-    color: gray;
-    font-size: 25px;
-    font-weight :700px;
-    position:absolute;
-    left:270px;
-    line-height: 60px;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
-
-.btn_two i:hover{
-    font-size: 30px;
-}
-
-.sidebar_menu .menu{
-    position:absolute;
-    width:100%;
-    top:80px;
-}
-
-.sidebar_menu .menu li{
-    margin-top: 6px;
-    padding:14px 20px;
-}
-
-.sidebar_menu .menu li:hover{
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-}
-
-.sidebar_menu .menu i{
-    padding-right: 8px;
-}
-
-.sidebar_menu .menu i,a{
-    color:white;
-    text-decoration: none;
-}
-
-.btn_one:hover{
-    font-size: 30px;
-}
-
-#check:checked ~ .sidebar_menu{
-    left:0;
-}
-
-#check:checked ~ .btn_one{
-    opacity:1;
-}
-
-#check:checked ~ .sidebar_menu .btn_two{
-    opacity:1;
-}
 /* BODY */
 
 body{
     color: rgb(217, 186, 232);
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(45, 8, 63);
+    background-image: linear-gradient( 225deg,black,rgb(45, 8, 63));
+
+    /* background-color: rgb(45, 8, 63); */
     line-height: 1.5;
 }
 
@@ -114,9 +37,7 @@ ul{
     margin: 5%;
     transition: all 0.3s linear;
 }
-.cards:hover{ 
-    transform: scale3d(1.05, 1.05, 0.3);;
-}
+
 .heading{
     text-align: center;
     margin: 25px;
@@ -144,7 +65,7 @@ img{
     height:20%;
     margin: 10px;
     text-align: center;
-    font-size:x-large;
+    font-size:large;
     border-bottom-left-radius: 1%;
     border-bottom-right-radius: 1%;
     
@@ -159,7 +80,6 @@ img{
 @media(max-width:750px){
     img{
         width:400px;
-        height:219px;
        margin: 10px;
        margin-top: 50px;
     }
